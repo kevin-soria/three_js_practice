@@ -1,4 +1,4 @@
- """
+"""
 This module takes care of starting the API Server, Loading the DB and Adding the endpoints
 """
 import os
@@ -36,14 +36,14 @@ app.register_blueprint(api, url_prefix='/api')
 @app.errorhandler(APIException)
 def handle_invalid_usage(error):
     return jsonify(error.to_dict()), error.status_code
-return send_from_directory(static_file_dir, 'index.html')
+
 # generate sitemap with all your endpoints
 @app.route('/')
 def sitemap():
     if DEBUG:
         return generate_sitemap(app)
 
-
+    return send_from_directory(static_file_dir, 'index.html')
 
 @app.route('/<path:path>', methods=['GET'])
 def serve_any_other_file(path):
