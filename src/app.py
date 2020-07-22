@@ -36,7 +36,7 @@ app.register_blueprint(api, url_prefix='/api')
 @app.errorhandler(APIException)
 def handle_invalid_usage(error):
     return jsonify(error.to_dict()), error.status_code
-
+return send_from_directory(static_file_dir, 'index.html')
 # generate sitemap with all your endpoints
 @app.route('/')
 def sitemap():
