@@ -40,7 +40,7 @@ You have to migrate and upgrade the migrations for every update you make to your
 $ pipenv run migrate (to make the migrations)
 $ pipenv run upgrade  (to update your databse with the migrations)
 ```
-dfghsdfshsdh
+
 
 # Manual Installation for Ubuntu & Mac
 
