@@ -10,7 +10,8 @@
 - Fast deloyment to heroku with `$ pipenv run deploy`.
 - Use of `.env` file (persistent enviromental variables).
 - SQLAlchemy integration for database abstraction.
-deply to heroku
+-deply to heroku
+-add resppi2
 
 ## How to Start the Project?
 
