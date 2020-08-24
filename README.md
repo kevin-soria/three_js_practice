@@ -31,7 +31,7 @@ POST /people   → will become →   POST /api/people
 - src/front/style/style.css (your front end styles)
 - src/front/js/index.js (entry file for your js application)
 - src/front/index.html (the main HTML, it will be displayed on the default path `/`)
-- serc/api.routes/routes.py
+
 
 For a more detailed explanation, look for the tutorial inside the `docs` folder.
 
